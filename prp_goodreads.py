@@ -10,9 +10,9 @@ from dependency_parsing import *
 # books : 25475, # users : 18892
 # reviews : 1378033, # reviews containing spoiler : 9M,
 # sentences : 1700M, # spoiler sentences : 57M
-user_id, timestamp, review_sentences, rating, has_spoiler, book_id, review_id
+## keys() : user_id, timestamp, review_sentences, rating, has_spoiler, book_id, review_id
 '''
-# type(data[0]['review_sentences'])
+
 def make_graph(num_workers):
     data_path = './datas/goodreads_data/'
     data_name = 'goodreads_reviews_spoiler.json'
@@ -31,17 +31,6 @@ def make_graph(num_workers):
     # except:
     #     pickle.dump(graph_data, open(data_path + 'graph_goodreads.pickle', 'wb'))
     pickle.dump(graph_data, open(data_path + 'node_edge_info.pickle', 'wb'))
-
-def check():
-    data_path = './datas/goodreads_data/'
-    data_name = 'graph_goodreads.json'
-
-    print('Data loading...')
-    data = json.load(open(data_path + data_name, 'r'))
-    print('Loading finished')
-
-    print(len(data))
-    print(data[0]['graph'][0][1])
 
 def extracter(num_workers):
     data_path = './datas/goodreads_data/'
@@ -62,5 +51,4 @@ def extracter(num_workers):
 
 if __name__ == '__main__':
     # make_graph(10)
-    # check()
     extracter(10)
