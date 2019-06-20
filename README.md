@@ -1,4 +1,4 @@
 # GCN-based_spoiler-detection
 
 ## Dataset download
-* [link](https://www.naver.com/)
+* [https://cseweb.ucsd.edu/~jmcauley/datasets.html#spoilers](https://cseweb.ucsd.edu/~jmcauley/datasets.html#spoilers)
