@@ -6,8 +6,6 @@ import pickle
 import time
 import os
 from concurrent.futures import ProcessPoolExecutor as prpExecutor
-import torch
-import torch.nn as nn
 
 def extract_info(graphs, is_directional=False):
     result = {}
