@@ -1,4 +1,4 @@
-# GCN-based_spoiler-detection
+# Spoiler Detection Model using Syntactic Graph Neural Network
 
 ## Dataset download
 * [Goodreads Spoilers](https://cseweb.ucsd.edu/~jmcauley/datasets.html#spoilers)
